@@ -1,22 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6dfecba3-9008-4915-a2b5-93671d5a7ca2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Py_dictionary_&amp;_set/problem4.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Py_dictionary_&amp;_set/problem5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/python_programs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python_programs.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Py_list_&amp;_tuples/list.py" beforeDir="false" afterPath="$PROJECT_DIR$/Py_list_&amp;_tuples/list.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Py_conditions/problem3.py" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="30hKEEtb1UUxWi0IRqYZZxLmXV0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -24,10 +41,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.list.executor": "Run",
+    "Python.mini_calculator.executor": "Run",
+    "Python.post_checker.executor": "Run",
+    "Python.problem1.executor": "Run",
+    "Python.problem2.executor": "Run",
+    "Python.problem3.executor": "Run",
+    "Python.string.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true"
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "E:/python_programs"
   }
 }]]></component>
   <component name="SharedIndexes">
