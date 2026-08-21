@@ -1,3 +1,11 @@
+"""
+
+String Methods & Operations
+----------------------------
+String basic methods, operations & shorting.
+
+"""
+
 name="tariqul Islam Faisal"
 nameShort1=name[0:9] # for shorting the string
 nameShort2=name[:8] # left side default take 0

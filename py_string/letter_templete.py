@@ -1,9 +1,10 @@
-# Write a program to fill in a letter template given below with name and date.
-# letter = '''
-# Dear <|Name|>,
-# You are selected!
-# <|Date|>
-# '''
+"""
+
+Basic Letter Templete
+----------------------
+A mini program to fill in a letter template given below with name and date.
+
+"""
 
 name = input("enter name - ")
 date= input("enter date - ")
@@ -21,4 +22,4 @@ letter2= '''
     You are selected!
     <|Date|>
  '''
-print(letter2.replace("<|Name|>","Faysal").replace("<|Date|>","31.07.2025"))
+print(letter2.replace("<|Name|>","Faysal").replace("<|Date|>","15.07.2026"))

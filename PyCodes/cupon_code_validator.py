@@ -1,15 +1,24 @@
-# Class to validate coupon code
+"""
+
+Cupon Code Validator
+--------------------
+Checks whether the cupon code is valid or invalid
+
+"""
 class CouponCodeValidator:
     def is_valid_coupon(self, coupon):
-        is_valid = coupon.startswith("C") and coupon[-1].isdigit()  # Boolean: True if valid
+        if not coupon:
+            return False
+        
+        wrong_inputs = " +-*/_=<>,.!#:;'?{}[]()\\|`~"
+        wrong_inputs_list = list(wrong_inputs)
+        for char in wrong_inputs_list:
+            if char in coupon:
+                return False
+        is_valid = coupon.startswith("C") and coupon[-1].isdigit()
         return is_valid
 
-# Create validator instance
 validator = CouponCodeValidator()
-
-# Get user input
 coupon_code = input("Enter coupon code: ")
-
-# Check and display result
 result = validator.is_valid_coupon(coupon_code)
 print(f"Coupon {coupon_code} is {'valid' if result else 'invalid'}")

@@ -1,20 +1,33 @@
-# Class to manage test case statuses
+"""
+
+Test Case Status Counter
+-------------------------
+Checks how many test cases passes or failed & takes only valid values (pass/fail) from user
+
+"""
 class StatusCounter:
     def __init__(self):
-        self.status_list = []  # List to store statuses
-    def count_status(self, status):
-        is_valid = status.lower() in ["pass", "fail"]  # Boolean: True if valid status
-        if is_valid:
-            self.status_list.append(status.lower())  # Add valid status to list
-        return is_valid, self.status_list.count(status.lower())  # Return validity and count
+        self.pass_count = 0
+        self.fail_count = 0
 
-# Create counter instance
+    def add_status(self, status):
+        status = status.lower()
+
+        if status == "pass":
+            self.pass_count += 1
+            return True
+        elif status == "fail":
+            self.fail_count += 1
+            return True
+        else:
+            return False
+
 counter = StatusCounter()
-
-# Get user input
 status = input("Enter test case status (pass/fail): ")
+is_valid = counter.add_status(status)
 
-# Count and display result
-valid, count = counter.count_status(status)
-print(f"Status {status} is {'valid' if valid else 'invalid'}, count: {count}")
-print(f"Status list: {counter.status_list}")
+if is_valid:
+    print(f"Status - {status} is valid")
+    print(f"Total Pass : {counter.pass_count}, Total Fail: {counter.fail_count}")
+else:
+    print(f"Status {status} is invalid!")

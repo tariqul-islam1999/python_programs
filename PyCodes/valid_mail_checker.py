@@ -1,3 +1,10 @@
+"""
+
+Valid E-mail Checker
+---------------------
+Checks whether an email is valid or not
+
+"""
 user_mail = input("Enter your mail address - ")
 
 def is_valid_mail(email):

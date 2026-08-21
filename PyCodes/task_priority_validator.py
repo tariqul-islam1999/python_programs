@@ -1,15 +1,17 @@
-# Class to validate task priority
+"""
+
+Simple Task Priority Validator
+-------------------------------
+Chekcs the task's priority for process
+
+"""
 class TaskPriorityValidator:
     def is_valid_priority(self, priority):
-        is_valid = priority in [1, 2, 3]  # Boolean: True if priority is 1, 2, or 3
+        is_valid = priority in [1, 2, 3]
         return is_valid
 
-# Create validator instance
 validator = TaskPriorityValidator()
-
-# Get user input
-task_priority = int(input("Enter task priority (1-3): "))
-
-# Check and display result
+task_name = input("Enter Task Name : ")
+task_priority = int(input("Set task's priority (1-3): "))
 result = validator.is_valid_priority(task_priority)
-print(f"Priority {task_priority} is {'valid' if result else 'invalid'}")
+print(f"Task - {task_name} | Priority - {task_priority} | {'Valid' if result else 'invalid'}")
