@@ -75,3 +75,13 @@ details(
     project1 = "E-Commerce",
     project2 = "Academic Management System"
 )
+
+# Required Arguments
+
+def sum (num1,num2):
+    print(f"sum - {num1+num2}")
+sum(10,20)
+#---------------------------------------------------------------
+def avg (num1,num2,num3,count=3):
+    print(f"average - {(num1+num2+num3)/count}")
+avg(10,20,50)
