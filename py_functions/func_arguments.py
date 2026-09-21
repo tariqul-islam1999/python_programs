@@ -16,11 +16,11 @@ Types of Arguments -
 def add (a=10,b=20):
     return a+b
 print(add())
-
+#---------------------------------------------------------------
 def mul (a=5,b=10):
     print(f"Result - {a*b}")
 mul(100,2)
-
+#---------------------------------------------------------------
 def div (a= 5,b=10):
     print(f"Result - {a/b}")
 div(b=2)
@@ -31,7 +31,7 @@ def greet(greeting,message,name):
     print(f"{greeting}, {name}! {message}.")
 
 greet(name="Tariqul",greeting="Good Morning",message="Welcome")
-
+#---------------------------------------------------------------
 def email(to,greeting,name,message):
     print(f"To : {to}\n{greeting}, {name}!\n{message}.")
 
@@ -45,11 +45,15 @@ def add_numbers(*number):
 nums = add_numbers(12,34,56,645,234,5454,65343,5464)
 print(nums) # all the numbers will be in tuple 
 
+#---------------------------------------------------------------
+
 def show_details(**details):
     for key,val in details.items():
         print(f"{key} : {val}")
 
 show_details(name = "Tariqul",age = 26,hobby="coding") # all the data will be in dictonary 
+
+#---------------------------------------------------------------
 
 def details (name,*numbers,fav_lang="C++",**projects):
 
